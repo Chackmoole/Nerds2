@@ -48,7 +48,7 @@
                 Математически выверенный дизайн для вашего сайта или мобильного
                 приложения.
               </p>
-              <a class="button button__large" href="#">Узнать больше</a>
+              <a class="button button-large" href="#">Узнать больше</a>
             </div>
           </li>
 
@@ -61,7 +61,7 @@
                 Никакого креатива, только математические формулы для расчета
                 идеальных пропорций.
               </p>
-              <a class="button button__large" href="#">Узнать больше</a>
+              <a class="button button-large" href="#">Узнать больше</a>
             </div>
           </li>
 
@@ -72,7 +72,7 @@
                 Работать днем, как все? Мы&nbsp;против этого. Ближе
                 к&nbsp;полуночи работа только начинается.
               </p>
-              <a class="button button--large" href="#">Узнать больше</a>
+              <a class="button button-large" href="#">Узнать больше</a>
             </div>
           </li>
         </ul>
@@ -224,7 +224,7 @@
           </p>
           <!-- класс для избежания дублирования, возможно при стилизации придется изменить -->
           <a class="map__text" href="tel:+78122757575">+7 (812) 275-75-75</a>
-          <a class="button button__large" href="#">Напишите нам</a>
+          <a class="button button-large" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -259,5 +259,33 @@
         </p>
       </div>
     </footer>
+
+    <section class="popup">
+      <h2 class="popup__title">Напишите нам</h2>
+      <button class="popup__close">
+        <span class="visually-hidden">
+          Закрыть форму отправки обратной связи
+        </span>
+      </button>
+
+      <form action="post">
+        <label class="popup__lable"
+          >Ваше имя:
+          <input type="text" value="Имя Фамилия" />
+        </label>
+        <label class="popup__lable"
+          >Ваш e-mail:
+          <input type="text" value="email@example.com" />
+        </label>
+        <label class="popup__lable">
+          <textarea
+            cols="30"
+            rows="5"
+            placeholder="В свободной форме"
+          ></textarea>
+        </label>
+        <button class="button botton-large" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
