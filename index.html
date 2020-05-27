@@ -4,10 +4,260 @@
     <meta charset="utf-8" />
     <title>Учебный: Nerds</title>
   </head>
-
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="page-header">
+      <a class="logo">
+        <img
+          class="logo__img"
+          src="https://via.placeholder.com/160x66"
+          alt="Логотип Nerds"
+          width="160"
+          height="65"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Студия</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Клиенты</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Магазин</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="cart" href="#"></a>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Студия разработки Nerds</h1>
+
+      <section class="slider">
+        <h2 class="visually-hidden">Преимущества компании Nerds</h2>
+        <ul class="slider__list">
+          <li class="slider__item">
+            <!-- предполагаю div пригодится для позиционирования -->
+            <div class="slider__inner">
+              <h2 class="slider__title">Долго, дорого, скрупулезно.</h2>
+              <p class="slider__subtitle">
+                Математически выверенный дизайн для вашего сайта или мобильного
+                приложения.
+              </p>
+              <a class="button button__large" href="#">Узнать больше</a>
+            </div>
+          </li>
+
+          <li class="slider__item">
+            <div class="slider__inner">
+              <h2 class="slider__title">
+                Любим математику как никто другой
+              </h2>
+              <p class="slider__subtitle">
+                Никакого креатива, только математические формулы для расчета
+                идеальных пропорций.
+              </p>
+              <a class="button button__large" href="#">Узнать больше</a>
+            </div>
+          </li>
+
+          <li class="slider__item">
+            <div class="slider__inner">
+              <h2 class="slider__title">Только ночь, только хардкор</h2>
+              <p class="slider__subtitle">
+                Работать днем, как все? Мы&nbsp;против этого. Ближе
+                к&nbsp;полуночи работа только начинается.
+              </p>
+              <a class="button button--large" href="#">Узнать больше</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="products">
+        <!-- тут возможно не праивльно придумал заголовок -->
+        <h2 class="visually-hidden">Мы разрабатываем</h2>
+        <!-- тут артикл перебор скорее всего -->
+        <ul class="products__list">
+          <li class="products__item">
+            <!-- странно смотрится h3 с учетом, что это первый нормальный заголовок на сайте + он достаточно весомый -->
+            <h3 class="products__title">Веб-сайты</h3>
+            <p class="products__text">
+              Мир никогда не&nbsp;будет преж ним после того как увидит ваш сайт!
+            </p>
+            <a class="button" href="#">Заказать</a>
+          </li>
+
+          <li class="products__item">
+            <h3 class="products__title">Приложения</h3>
+            <p class="products__text">
+              Покорите топ-10 приложений в&nbsp;AppStore и&nbsp;Google Play
+            </p>
+            <a class="button button--green" href="#">Заказать</a>
+          </li>
+
+          <li class="products__item">
+            <h3 class="products__title">Презентации</h3>
+            <p class="products__text">
+              Вы&nbsp;даже не&nbsp;подозреваете, насколько вы&nbsp;изумительны!
+            </p>
+            <a class="button button--yellow" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="descriptions">
+        <div class="descriptions__inner">
+          <h2 class="visually-hidden">О нас</h2>
+          <b class="descriptions__slogan">
+            Мы&nbsp;&mdash; маленькая, но&nbsp;гордая дизайн-студия
+            из&nbsp;Краснодара.
+          </b>
+          <p class="descriptions__text">
+            Исповедуем принципы минимализма и&nbsp;чистоты. Ставим
+            математический расчет превыше креатива. Работаем не&nbsp;покладая
+            рук, как роботы.
+          </p>
+          <h3 class="descriptions__title">Выполняем заказы на разработку:</h3>
+          <ul class="descriptions__list">
+            <li class="descriptions__item">Веб-сайтов любой сложности</li>
+            <li class="descriptions__item">
+              Мобильных приложений для iOS и Android
+            </li>
+            <li class="descriptions__item">
+              Слайдшоу и видео для корпоративных презентаций
+            </li>
+          </ul>
+        </div>
+
+        <div class="descriptions__inner">
+          <img
+            src="https://via.placeholder.com/160x66"
+            alt="Логотип Nerds"
+            width="360"
+            height="208"
+          />
+          <!-- предчувствую холивар -->
+          <table class="table">
+            <caption class="table__title">
+              C 2004 года любим точность во всем:
+            </caption>
+            <tr class="table__string">
+              <td class="table__value">
+                146<span class="table__element">%</span>
+              </td>
+              <td class="table__value">
+                100<span class="table__element">%</span>
+              </td>
+              <td class="table__value">
+                50<span class="table__element">%</span>
+              </td>
+            </tr>
+            <tr class="table__string">
+              <th class="table__subtitle">Уровень самоотдачи</th>
+              <th class="table__subtitle">Соблюдение сроков</th>
+              <th class="table__subtitle">Минимальная предоплата</th>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <h2 class="visually-hidden">Примеры наших работ</h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a href="#" class="portfolio__link">
+              <img
+                class="portfolio__img"
+                src="https://via.placeholder.com/209x90"
+                alt="Логотип HTML academy"
+                width="209"
+                height="90"
+              />
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a href="#" class="portfolio__link">
+              <img
+                class="portfolio__img"
+                src="https://via.placeholder.com/209x90"
+                alt="Логотип Барбершоп Бородински"
+                width="209"
+                height="90"
+              />
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a href="#" class="portfolio__link">
+              <img
+                class="portfolio__img"
+                src="https://via.placeholder.com/209x90"
+                alt="Логотип Pink"
+                width="209"
+                height="90"
+              />
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a href="#" class="portfolio__link">
+              <img
+                class="portfolio__img"
+                src="https://via.placeholder.com/209x90"
+                alt="Логотип Mishka"
+                width="209"
+                height="90"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта и контакты</h2>
+        <div class="map__inner">
+          <h3 class="map__title">Nerds design studio</h3>
+          <p class="map__text">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д.19.8
+          </p>
+          <!-- класс для избежания дублирования, возможно при стилизации придется изменить -->
+          <a class="map__text" href="tel:+78122757575">+7 (812) 275-75-75</a>
+          <a class="button button__large" href="#">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="socials">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="vk.com" class="socials__link"
+              ><span class="visually-hidden">ссылка на сайт Вконтакте</span></a
+            >
+          </li>
+          <li class="socials__item">
+            <a href="facebook.com" class="socials__link"
+              ><span class="visually-hidden">ссылка на сайт Фейсбук</span></a
+            >
+          </li>
+          <li class="socials__item">
+            <a href="instagram.com" class="socials__link"
+              ><span class="visually-hidden">ссылка на сайт Инстаграм</span></a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <div class="container">
+        <!-- опять чую холивар да и название класса наверное не самое удачное и говорящее -->
+        <b class="container__title">Давайте дружить, это выгодно!</b>
+        <p class="container__text">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
